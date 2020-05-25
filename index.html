@@ -236,7 +236,20 @@
                 <section class="intro-about section-margin">
                     <div class="container">
                         <div class="intro-content-text">
+                            <div id="twitch-embed"></div>
 
+                            <!-- Load the Twitch embed script -->
+                            <script src="https://embed.twitch.tv/embed/v1.js"></script>
+                            
+                            <!-- Create a Twitch.Embed object. This will render within the placeholder div -->
+                            <script type="text/javascript">
+                              new Twitch.Embed("twitch-embed", {
+                                channel: "dari_ya",
+                                layout: "video",
+                                height: "1000px",
+                                width: "1000px",
+                              });
+                            </script>
                             <h2 data-dsn-grid="move-section" data-dsn-move="-30" data-dsn-duration="100%"
                                 data-dsn-opacity="1.2" data-dsn-responsive="tablet">
                                 Пошаговая инструкция<br /> по установке (для тех, кто хоет зайти в игру и у кого есть компьютер)
